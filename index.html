@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/footer.css">
+    <link rel="stylesheet" href="src/javascript.js">
+    <title>Aniversário</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o CSS -->
+</head>
+<body>
+    <script src="script.js"></script>
+
+    <div class="container">
+    <h1>CONFIRME SUA PRESENÇA!</h1>
+    
+    <!-- Formulário de Confirmação de Presença -->
+    <form action="https://api.sheetmonkey.io/form/8fCh7PMTQGZZVzL7KrbgGV" method="post">
+        <label for="nome">Digite o nome dos convidados:</label>
+        <input type="text" id="nome" name="Qual é o nome de vocês ou seu?" placeholder="Nome(s) do(s) convidado(s)" required>
+        
+        <div class="confirmacao">
+            <p>Você ou vocês estarão presentes?</p>
+            <!-- Caixa de seleção (dropdown) com as opções Sim ou Não -->
+            <label for="presenca">Escolha sua resposta:</label>
+            <select id="presenca" name="Você ou Vocês comparecerão ao aniversário?" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+            </select>
+        </div>
+        
+        <button type="submit">Confirmar Presença</button>
+    </form>
+
+    <p id="resposta">
+        Agradecemos por sua confirmação
+    </p>
+</div>
+<div class="cont">
+    <img src="src/img/5c07f44816bed2117b9512f6c812b1e8.png" alt="">
+</div>
+
+</body>
+</html>

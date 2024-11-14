@@ -1,0 +1,133 @@
+/* Resetando algumas margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fcfbbe;
+
+}   
+
+.cont{
+    display: flex; /* Usando flexbox para centralizar */
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+    
+    }
+.cont img{
+    width: 50%; /* Define a largura da imagem para 50% da largura da tela */
+ 
+}
+
+/* Estilo para o container principal */
+.container {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto; /* Reduzi a margem */
+    padding: 15px; /* Menos padding para caber melhor na tela */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Título principal com borda verde */
+h1 {
+    text-align: center;
+    color: #333; /* Cor preta para o texto */
+    margin-bottom: 15px; /* Menos margem para não ocupar muito espaço */
+    font-size: 1.4rem; /* Reduzido para telas menores */
+    padding: 8px;
+    border: 3px solid #ffffff; /* Borda verde ao redor do título */
+    border-radius: 5px;
+}
+
+/* Estilo para os labels */
+label {
+    font-size: 0.9rem; /* Reduzido para não ocupar muito espaço */
+    color: #333;
+    display: block;
+    margin-bottom: 8px; /* Menos espaço entre label e campo */
+}
+
+/* Estilo para os inputs de texto */
+input[type="text"], select {
+    width: 100%;
+    padding: 8px; /* Menos padding para economizar espaço */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem; /* Fonte um pouco menor */
+    margin-bottom: 15px; /* Menos margem entre campos */
+    transition: border-color 0.3s ease;
+}
+
+/* Efeito de foco para os inputs */
+input[type="text"]:focus, select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Estilo para a caixa de seleção (dropdown) */
+select {
+    background-color: #fff;
+}
+
+/* Estilo para o botão de envio */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px; /* Menos padding para se ajustar melhor */
+    font-size: 1rem; /* Fonte um pouco menor */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover no botão */
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para o parágrafo de agradecimento */
+#resposta {
+    text-align: center;
+    margin-top: 15px; /* Menos margem para não ocupar tanto espaço */
+    font-size: 0.9rem; /* Fonte menor */
+    color: #666;
+}
+
+/* Media Query para telas mobile */
+@media (max-width: 768px) {
+body{
+    background-color: #fcfbbe;
+
+}   
+
+.cont{
+    display: flex; /* Usando flexbox para centralizar */
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+    
+    }
+.cont img{
+    width: 50%; /* Define a largura da imagem para 50% da largura da tela */
+ 
+}
+       }
