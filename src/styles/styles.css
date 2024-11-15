@@ -10,6 +10,14 @@ body{
 
 }   
 
+/* Estilo para a mensagem de erro */
+.error-message {
+    color: red; /* Texto vermelho para o erro */
+    font-size: 0.9rem; /* Fonte um pouco menor */
+    margin-top: 10px; /* Espaçamento acima da mensagem */
+    display: none; /* Inicialmente escondido */
+}
+
 .cont{
     display: flex; /* Usando flexbox para centralizar */
     justify-content: center; /* Centraliza a imagem horizontalmente */
